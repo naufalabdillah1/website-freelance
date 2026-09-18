@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="index, follow">
+<title>Naufal Abdillah — Freelancer Pemula | Website, Coding, Edit Video, Analisis Data</title>
+<meta name="description" content="Portofolio Naufal Abdillah, pelajar TJKT/TKJ yang membuka jasa freelance: pembuatan website, coding, edit video, analisis data, dan desain sederhana.">
+<meta name="theme-color" content="#1f8f82">
+<!-- Open Graph: ganti "og:url" dan pastikan "og:image" pakai URL lengkap setelah website online -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Naufal Abdillah — Freelancer Pemula">
+<meta property="og:description" content="Portofolio & jasa freelance: pembuatan website, coding, edit video, analisis data, dan desain sederhana.">
+<meta property="og:image" content="founder.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="brand"><span class="brand-mark"></span><span data-i18n="brandName">Freelancer Pemula</span></div>
+    <div class="nav-links" id="navLinks">
+      <a href="#home" data-i18n="navHome">Beranda</a>
+      <a href="#about" data-i18n="navAbout">Tentang</a>
+      <a href="#services" data-i18n="navServices">Layanan</a>
+      <a href="#estimator" data-i18n="navEstimator">Estimasi</a>
+      <a href="#process" data-i18n="navProcess">Proses</a>
+      <a href="#portfolio" data-i18n="navPortfolio">Portofolio</a>
+      <a href="#skills" data-i18n="navSkills">Skills</a>
+      <a href="#tools" data-i18n="navTools">Tools</a>
+      <a href="#interests" data-i18n="navInterests">Minat</a>
+      <a href="#testimonial" data-i18n="navTesti">Testimoni</a>
+      <a href="#faq" data-i18n="navFaq">FAQ</a>
+      <a href="#contact" data-i18n="navContact">Kontak</a>
+    </div>
+    <div class="controls">
+      <button class="pill-btn" id="langToggle" aria-label="Switch language">🇮🇩 ID</button>
+      <button class="pill-btn" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+      <button class="burger" id="burgerBtn" aria-label="Menu">☰</button>
+    </div>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow mono" data-i18n="heroEyebrow">STATUS: BELAJAR & TERBUKA UNTUK PROYEK</div>
+      <!-- Availability status (item 20): ganti nilai "availabilityStatus" di script.js untuk mengubah status ini -->
+      <div class="availability-badge" id="availabilityBadge">
+        <span class="dot"></span><span class="availability-text mono">Open for Project</span>
+      </div>
+      <h1 data-i18n="heroTitle">Halo, saya sedang membangun karier freelance dari nol.</h1>
+      <div class="role-line mono"><span id="roleText"></span><span class="cursor">&nbsp;</span></div>
+      <p class="lede" data-i18n="heroLede">Pelajar jurusan TJKT yang belajar coding, membangun website, dan mengasah kemampuan digital lewat proyek nyata — sekecil apa pun proyeknya.</p>
+      <div class="cta-row">
+        <a href="#contact" class="btn btn-primary" data-i18n="ctaContact">Hubungi Saya</a>
+        <a href="#portfolio" class="btn btn-outline" data-i18n="ctaPortfolio">Lihat Portofolio</a>
+        <a href="#services" class="btn btn-amber" data-i18n="ctaOrder">Pesan Jasa</a>
+      </div>
+    </div>
+    <div class="net-panel">
+      <svg viewBox="0 0 400 400" aria-hidden="true">
+        <line class="link-line" x1="80" y1="90" x2="200" y2="180"/>
+        <line class="link-line" x1="200" y1="180" x2="320" y2="110"/>
+        <line class="link-line" x1="200" y1="180" x2="140" y2="290"/>
+        <line class="link-line" x1="200" y1="180" x2="290" y2="300"/>
+        <line class="link-line" x1="80" y1="90" x2="60" y2="230"/>
+        <line class="link-line" x1="320" y1="110" x2="340" y2="250"/>
+        <circle class="node pulse" cx="200" cy="180" r="6"/>
+        <circle class="node" cx="80" cy="90" r="4.5"/>
+        <circle class="node amber pulse" cx="320" cy="110" r="4.5" style="animation-delay:.6s"/>
+        <circle class="node" cx="140" cy="290" r="4.5"/>
+        <circle class="node amber" cx="290" cy="300" r="4.5"/>
+        <circle class="node" cx="60" cy="230" r="4"/>
+        <circle class="node" cx="340" cy="250" r="4" style="animation-delay:1.2s"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div>
+      <div class="photo-frame"><img src="founder.png" alt="Foto Profil Naufal Abdillah" loading="lazy" decoding="async" width="280" height="350"></div>
+      <div class="major-tag">🎓 <span data-i18n="aboutMajor">TJKT / TKJ Student</span></div>
+    </div>
+    <div>
+      <div class="eyebrow mono" data-i18n="aboutEyebrow">TENTANG SAYA</div>
+      <h2 data-i18n="aboutTitle">Masih pelajar, tapi serius belajar.</h2>
+      <p class="lede" style="max-width:640px;" data-i18n="aboutP1">Halo, saya seorang pelajar yang mengambil jurusan TJKT/TKJ (Teknik Jaringan Komputer dan Telekomunikasi). Saya punya ketertarikan besar terhadap dunia teknologi dan terus mencoba mempelajari hal-hal baru — mulai dari coding, pembuatan website, cryptocurrency, saham, analisis data, trading, hingga freelance.</p>
+      <p class="lede" style="max-width:640px;" data-i18n="aboutP2">Saya masih dalam tahap belajar dan masih banyak hal yang perlu dikembangkan. Tapi saya percaya, dengan terus belajar, mencoba, dan mencari pengalaman, kemampuan saya akan terus meningkat. Saya mulai mencoba dunia freelance untuk mendapatkan pengalaman, mengembangkan skill, sekaligus mendapatkan tambahan uang jajan.</p>
+      <p class="lede" style="max-width:640px;" data-i18n="aboutP3">Bagi saya, menjadi pelajar bukan alasan untuk berhenti berkembang. Saya ingin terus belajar, membangun pengalaman, dan meningkatkan kemampuan agar punya masa depan yang lebih baik.</p>
+      <div class="interest-chip-row">
+        <span class="chip" data-i18n="chip1">Coding</span>
+        <span class="chip" data-i18n="chip2">Website</span>
+        <span class="chip" data-i18n="chip3">Jaringan Komputer</span>
+        <span class="chip" data-i18n="chip4">Crypto</span>
+        <span class="chip" data-i18n="chip5">Saham & Trading</span>
+        <span class="chip" data-i18n="chip6">Analisis Data</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="eyebrow mono" data-i18n="servicesEyebrow">LAYANAN</div>
+    <h2 data-i18n="servicesTitle">Jasa yang bisa saya bantu kerjakan</h2>
+    <p class="lede" data-i18n="servicesLede">Berikut layanan yang saya tawarkan sesuai kemampuan yang sedang saya kembangkan. Saya kerjakan dengan sungguh-sungguh dan komunikasi terbuka soal apa yang bisa dan belum bisa saya lakukan.</p>
+    <div class="service-grid">
+      <div class="service-card">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="14" rx="1.5"/><path d="M3 8h18"/><circle cx="6" cy="6" r=".6" fill="currentColor"/></svg>
+        <h3 data-i18n="svc1Title">Pembuatan Website</h3>
+        <p data-i18n="svc1Desc">Website sederhana hingga menengah — landing page, profil usaha, atau portofolio pribadi.</p>
+        <div class="service-tiers">
+          <div class="tier-row"><span class="tier-label" data-i18n="tierSimple">Simple</span><span class="tier-time mono" data-i18n="svc1Tier1Time">6–7 hari</span><span class="tier-price mono" data-i18n="svc1Tier1Price">Rp500rb–650rb</span></div>
+          <div class="tier-row"><span class="tier-label" data-i18n="tierMedium">Medium</span><span class="tier-time mono" data-i18n="svc1Tier2Time">7–9 hari</span><span class="tier-price mono" data-i18n="svc1Tier2Price">Rp700rb–900rb</span></div>
+          <div class="tier-row"><span class="tier-label" data-i18n="tierComplex">Complex</span><span class="tier-time mono" data-i18n="svc1Tier3Time">9–12+ hari</span><span class="tier-price mono" data-i18n="svc1Tier3Price">Rp980rb–1.450rb+</span></div>
+        </div>
+        <p class="service-note" data-i18n="svc1Note">Fitur tambahan seperti login/register, database, dashboard, API, atau payment integration dapat menambah harga di atas Rp1.450.000.</p>
+      </div>
+      <div class="service-card">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M13 5l-2 14"/></svg>
+        <h3 data-i18n="svc2Title">Coding & Programming</h3>
+        <p data-i18n="svc2Desc">Bantuan menulis atau memperbaiki kode kecil, script sederhana, dan tugas pemrograman dasar.</p>
+        <div class="service-tiers">
+          <div class="tier-row"><span class="tier-label" data-i18n="tierSimple">Simple</span><span class="tier-time mono" data-i18n="svc2Tier1Time">6–7 hari</span><span class="tier-price mono" data-i18n="svc2Tier1Price">Rp500rb–600rb</span></div>
+          <div class="tier-row"><span class="tier-label" data-i18n="tierMedium">Medium</span><span class="tier-time mono" data-i18n="svc2Tier2Time">7–8 hari</span><span class="tier-price mono" data-i18n="svc2Tier2Price">Rp650rb–850rb</span></div>
+          <div class="tier-row"><span class="tier-label" data-i18n="tierComplex">Complex</span><span class="tier-time mono" data-i18n="svc2Tier3Time">8–10+ hari</span><span class="tier-price mono" data-i18n="svc2Tier3Price">Rp900rb–1.250rb+</span></div>
+        </div>
+      </div>
+      <div class="service-card">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="12" rx="1.5"/><path d="M8 21h8M10 17v4"/></svg>
+        <h3 data-i18n="svc3Title">Edit Video</h3>
+        <p data-i18n="svc3Desc">Pemotongan, penggabungan, dan penyesuaian video sederhana untuk konten atau tugas.</p>
+        <div class="service-tiers">
+          <div class="tier-row"><span class="tier-label" data-i18n="tierSimple">Simple</span><span class="tier-time mono" data-i18n="svc3Tier1Time">3–5 jam</span><span class="tier-price mono" data-i18n="svc3Tier1Price">Rp90rb–140rb</span></div>
+          <div class="tier-row"><span class="tier-label" data-i18n="tierMedium">Medium</span><span class="tier-time mono" data-i18n="svc3Tier2Time">5–8 jam</span><span class="tier-price mono" data-i18n="svc3Tier2Price">Rp150rb–220rb</span></div>
+          <div class="tier-row"><span class="tier-label" data-i18n="tierComplex">Complex</span><span class="tier-time mono" data-i18n="svc3Tier3Time">8–12+ jam</span><span class="tier-price mono" data-i18n="svc3Tier3Price">Rp250rb–380rb+</span></div>
+        </div>
+      </div>
+      <div class="service-card">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19V9M11 19V4M18 19v-7"/></svg>
+        <h3 data-i18n="svc4Title">Analisis Data</h3>
+        <p data-i18n="svc4Desc">Merapikan dan membaca data sederhana di spreadsheet, membuat ringkasan yang mudah dipahami.</p>
+        <div class="service-tiers">
+          <div class="tier-row"><span class="tier-label" data-i18n="tierSimple">Simple</span><span class="tier-time mono" data-i18n="svc4Tier1Time">2–4 jam</span><span class="tier-price mono" data-i18n="svc4Tier1Price">Rp100rb–160rb</span></div>
+          <div class="tier-row"><span class="tier-label" data-i18n="tierMedium">Medium</span><span class="tier-time mono" data-i18n="svc4Tier2Time">4–8 jam</span><span class="tier-price mono" data-i18n="svc4Tier2Price">Rp180rb–260rb</span></div>
+          <div class="tier-row"><span class="tier-label" data-i18n="tierComplex">Complex</span><span class="tier-time mono" data-i18n="svc4Tier3Time">1–3+ hari</span><span class="tier-price mono" data-i18n="svc4Tier3Price">Rp300rb–480rb+</span></div>
+        </div>
+        <p class="service-note" data-i18n="svc4Note">Harga menyesuaikan jumlah data dan tingkat kesulitan.</p>
+      </div>
+      <div class="service-card">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
+        <h3 data-i18n="svc5Title">Desain Sederhana</h3>
+        <p data-i18n="svc5Desc">Desain grafis dasar seperti poster, banner, atau tampilan feed media sosial.</p>
+        <div class="service-tiers">
+          <div class="tier-row"><span class="tier-label" data-i18n="tierSimple">Simple</span><span class="tier-time mono" data-i18n="svc5Tier1Time">1–3 jam</span><span class="tier-price mono" data-i18n="svc5Tier1Price">Rp60rb–100rb</span></div>
+          <div class="tier-row"><span class="tier-label" data-i18n="tierMedium">Medium</span><span class="tier-time mono" data-i18n="svc5Tier2Time">3–5 jam</span><span class="tier-price mono" data-i18n="svc5Tier2Price">Rp110rb–160rb</span></div>
+          <div class="tier-row"><span class="tier-label" data-i18n="tierComplex">Complex</span><span class="tier-time mono" data-i18n="svc5Tier3Time">5–8+ jam</span><span class="tier-price mono" data-i18n="svc5Tier3Price">Rp180rb–280rb+</span></div>
+        </div>
+      </div>
+      <div class="service-card">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="9"/></svg>
+        <h3 data-i18n="svc6Title">Jasa Digital Lainnya</h3>
+        <p data-i18n="svc6Desc">Kebutuhan digital kecil lain — tanyakan saja, saya akan jawab jujur apakah bisa saya bantu.</p>
+        <p class="service-note" data-i18n="svc6Note">Estimasi waktu dan harga disesuaikan setelah diskusi kebutuhan, mulai dari Rp100.000.</p>
+      </div>
+      <div class="service-card">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+        <h3 data-i18n="svc7Title">Custom &amp; Rush Project</h3>
+        <p data-i18n="svc7Desc">Project dengan kebutuhan khusus (custom) atau yang butuh dikerjakan lebih cepat dari biasanya (rush).</p>
+        <p class="service-note" data-i18n="svc7Note">Harga dan waktu pengerjaan menyesuaikan tingkat kesulitan, kebutuhan spesifik, dan deadline. Harga final ditentukan setelah konsultasi langsung.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="estimator">
+  <div class="wrap">
+    <div class="eyebrow mono" data-i18n="estEyebrow">ESTIMASI PROYEK</div>
+    <h2 data-i18n="estTitle">Hitung perkiraan harga & waktu</h2>
+    <p class="lede" data-i18n="estLede">Pilih layanan, tingkat kesulitan, dan kebutuhan Anda untuk mendapatkan gambaran awal harga dan waktu pengerjaan. Estimasi ini bersifat awal — harga final ditentukan setelah diskusi kebutuhan secara detail.</p>
+    <div class="est-box">
+      <div class="est-form">
+        <div class="est-field">
+          <label for="estLayanan" data-i18n="estLabelLayanan">Layanan</label>
+          <select id="estLayanan">
+            <option value="website" data-i18n="estOptWebsite">Pembuatan Website</option>
+            <option value="coding" data-i18n="estOptCoding">Coding & Programming</option>
+            <option value="video" data-i18n="estOptVideo">Edit Video</option>
+            <option value="data" data-i18n="estOptData">Analisis Data</option>
+            <option value="design" data-i18n="estOptDesign">Desain Sederhana</option>
+            <option value="custom" data-i18n="estOptCustom">Custom Project</option>
+            <option value="other" data-i18n="estOptOther">Jasa Digital Lainnya</option>
+          </select>
+        </div>
+        <div class="est-field">
+          <label for="estTingkat" data-i18n="estLabelTingkat">Tingkat Kesulitan</label>
+          <select id="estTingkat">
+            <option value="simple" data-i18n="tierSimple">Simple</option>
+            <option value="medium" data-i18n="tierMedium">Medium</option>
+            <option value="complex" data-i18n="tierComplex">Complex</option>
+          </select>
+        </div>
+        <div class="est-field">
+          <label for="estDeadline" data-i18n="estLabelDeadline">Deadline</label>
+          <select id="estDeadline">
+            <option value="santai" data-i18n="estOptSantai">Fleksibel / santai</option>
+            <option value="normal" data-i18n="estOptNormal">Normal</option>
+            <option value="mendesak" data-i18n="estOptMendesak">Mendesak / Rush</option>
+          </select>
+        </div>
+        <div class="est-field est-field-checkbox">
+          <label class="est-checkbox-label">
+            <input type="checkbox" id="estFitur">
+            <span data-i18n="estFiturText">Butuh fitur tambahan (login, database, dashboard, API, dll)</span>
+          </label>
+        </div>
+        <button type="button" class="btn btn-primary" id="estBtn" data-i18n="estBtn">Hitung Estimasi</button>
+      </div>
+      <div class="est-result">
+        <p class="est-placeholder" id="estPlaceholder" data-i18n="estPlaceholder">Pilih layanan dan tingkat kesulitan, lalu klik "Hitung Estimasi" untuk melihat perkiraan.</p>
+        <div class="est-result-content" id="estResultContent" style="display:none;">
+          <div class="est-result-row"><span class="est-result-label" data-i18n="estResultTime">Perkiraan waktu pengerjaan</span><span class="est-result-value mono" id="estTimeValue"></span></div>
+          <div class="est-result-row"><span class="est-result-label" data-i18n="estResultPrice">Perkiraan harga</span><span class="est-result-value mono" id="estPriceValue"></span></div>
+          <ul class="est-notes" id="estNotes"></ul>
+          <a href="#order" class="btn btn-amber est-cta" data-i18n="estCta">Lanjut Isi Form Pemesanan</a>
+        </div>
+      </div>
+    </div>
+    <p class="skill-note" data-i18n="estDisclaimer">Estimasi ini adalah perkiraan awal, bukan harga pasti. Harga final ditentukan setelah diskusi kebutuhan secara detail.</p>
+  </div>
+</section>
+
+<section id="process">
+  <div class="wrap">
+    <div class="eyebrow mono" data-i18n="processEyebrow">PROSES KERJA</div>
+    <h2 data-i18n="processTitle">Bagaimana proyek Anda dikerjakan</h2>
+    <p class="lede" data-i18n="processLede">Berikut alur kerja yang saya terapkan di setiap proyek, agar prosesnya jelas dan transparan dari awal hingga selesai.</p>
+    <div class="process-grid">
+      <div class="process-card">
+        <span class="process-num mono">01</span>
+        <h3 data-i18n="proc1Title">Konsultasi</h3>
+        <p data-i18n="proc1Desc">Diskusi awal mengenai kebutuhan, tujuan, dan gambaran umum proyek Anda.</p>
+      </div>
+      <div class="process-card">
+        <span class="process-num mono">02</span>
+        <h3 data-i18n="proc2Title">Kebutuhan</h3>
+        <p data-i18n="proc2Desc">Mengumpulkan detail kebutuhan, referensi, dan batasan proyek secara lebih spesifik.</p>
+      </div>
+      <div class="process-card">
+        <span class="process-num mono">03</span>
+        <h3 data-i18n="proc3Title">Estimasi</h3>
+        <p data-i18n="proc3Desc">Memberikan perkiraan harga dan waktu pengerjaan berdasarkan kebutuhan yang sudah dibahas.</p>
+      </div>
+      <div class="process-card">
+        <span class="process-num mono">04</span>
+        <h3 data-i18n="proc4Title">Pengerjaan</h3>
+        <p data-i18n="proc4Desc">Proyek mulai dikerjakan sesuai kesepakatan, dengan update progres secara berkala.</p>
+      </div>
+      <div class="process-card">
+        <span class="process-num mono">05</span>
+        <h3 data-i18n="proc5Title">Revisi</h3>
+        <p data-i18n="proc5Desc">Penyesuaian hasil kerja berdasarkan masukan Anda hingga sesuai harapan.</p>
+      </div>
+      <div class="process-card">
+        <span class="process-num mono">06</span>
+        <h3 data-i18n="proc6Title">Finalisasi</h3>
+        <p data-i18n="proc6Desc">Hasil akhir diserahkan setelah disetujui, beserta file/aset pendukung yang diperlukan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <div class="wrap">
+    <div class="eyebrow mono" data-i18n="portfolioEyebrow">PORTOFOLIO</div>
+    <h2 data-i18n="portfolioTitle">Beberapa contoh latihan saya</h2>
+    <p class="lede" data-i18n="portfolioLede">Karena masih di awal perjalanan, sebagian karya di bawah adalah proyek latihan dan studi kasus. Tetap saya kerjakan dengan proses dan standar yang sama seperti proyek klien.</p>
+    <div class="port-grid">
+      <!-- Catatan: thumbnail masih placeholder bergradasi. Ganti dengan screenshot asli (mis. <img src="..."> di dalam .port-thumb) begitu tersedia. -->
+      <div class="port-card">
+        <div class="port-thumb t1 mono">index.html</div>
+        <div class="port-body">
+          <h3 data-i18n="port1Title">Website Portofolio Pribadi</h3>
+          <p data-i18n="port1Desc">Website satu halaman untuk memperkenalkan diri, dibangun dengan HTML, CSS, dan JavaScript.</p>
+          <div class="port-tech">
+            <span class="port-tech-chip">HTML</span>
+            <span class="port-tech-chip">CSS</span>
+            <span class="port-tech-chip">JavaScript</span>
+          </div>
+          <div class="port-footer">
+            <span class="port-tag" data-i18n="port1Tag">Proyek latihan</span>
+            <span class="port-demo-na mono" data-i18n="portDemoNA">Demo: belum tersedia</span>
+          </div>
+        </div>
+      </div>
+      <div class="port-card">
+        <div class="port-thumb t2 mono">landing-page</div>
+        <div class="port-body">
+          <h3 data-i18n="port2Title">Landing Page UMKM</h3>
+          <p data-i18n="port2Desc">Studi kasus landing page sederhana untuk usaha kecil, fokus pada kejelasan informasi dan tombol kontak.</p>
+          <div class="port-tech">
+            <span class="port-tech-chip">HTML</span>
+            <span class="port-tech-chip">CSS</span>
+            <span class="port-tech-chip">JavaScript</span>
+          </div>
+          <div class="port-footer">
+            <span class="port-tag" data-i18n="port2Tag">Studi kasus</span>
+            <span class="port-demo-na mono" data-i18n="portDemoNA">Demo: belum tersedia</span>
+          </div>
+        </div>
+      </div>
+      <div class="port-card">
+        <div class="port-thumb t3 mono">data-sheet</div>
+        <div class="port-body">
+          <h3 data-i18n="port3Title">Ringkasan Data Sederhana</h3>
+          <p data-i18n="port3Desc">Latihan merapikan data mentah menjadi tabel dan ringkasan yang lebih mudah dibaca.</p>
+          <div class="port-tech">
+            <span class="port-tech-chip">Spreadsheet</span>
+            <span class="port-tech-chip">Data Cleaning</span>
+          </div>
+          <div class="port-footer">
+            <span class="port-tag" data-i18n="port3Tag">Proyek latihan</span>
+            <span class="port-demo-na mono" data-i18n="portDemoNA">Demo: belum tersedia</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="eyebrow mono" data-i18n="skillsEyebrow">KEAHLIAN</div>
+    <h2 data-i18n="skillsTitle">Yang sedang saya pelajari</h2>
+    <div class="skill-list">
+      <div class="skill-row">
+        <div class="top"><span>HTML</span><span class="lvl mono">70%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-level="70"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="top"><span>CSS</span><span class="lvl mono">65%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-level="65"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="top"><span>JavaScript</span><span class="lvl mono">50%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-level="50"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="top"><span data-i18n="skillWeb">Pembuatan Website</span><span class="lvl mono">55%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-level="55"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="top"><span data-i18n="skillVideo">Edit Video</span><span class="lvl mono">45%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-level="45"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="top"><span data-i18n="skillData">Analisis Data</span><span class="lvl mono">40%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-level="40"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="top"><span data-i18n="skillNetwork">Teknologi Komputer & Jaringan</span><span class="lvl mono">60%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-level="60"></div></div>
+      </div>
+    </div>
+    <p class="skill-note" data-i18n="skillsNote">Angka di atas menggambarkan tingkat pemahaman saya saat ini, bukan tingkat kemahiran akhir — semuanya masih terus saya latih dan kembangkan.</p>
+  </div>
+</section>
+
+<section id="tools">
+  <div class="wrap">
+    <div class="eyebrow mono" data-i18n="toolsEyebrow">TOOLS & TEKNOLOGI</div>
+    <h2 data-i18n="toolsTitle">Tools yang saya gunakan</h2>
+    <p class="lede" data-i18n="toolsLede">Berikut software dan tools yang benar-benar saya pakai atau sedang saya pelajari dalam mengerjakan project.</p>
+    <div class="tools-grid">
+      <div class="tool-card">
+        <h3>VS Code &amp; Git / GitHub</h3>
+        <p data-i18n="tool1Desc">Code editor utama untuk menulis kode, serta version control untuk menyimpan dan mengelola project.</p>
+      </div>
+      <div class="tool-card">
+        <h3>Canva</h3>
+        <p data-i18n="tool2Desc">Desain visual sederhana seperti poster, banner, dan tampilan konten media sosial.</p>
+      </div>
+      <div class="tool-card">
+        <h3>CapCut</h3>
+        <p data-i18n="tool3Desc">Edit video — pemotongan, penggabungan, dan penyesuaian sederhana untuk konten atau tugas.</p>
+      </div>
+      <div class="tool-card">
+        <h3>Google Sheets / Excel</h3>
+        <p data-i18n="tool4Desc">Mengolah dan merapikan data sederhana dalam bentuk tabel serta ringkasan.</p>
+      </div>
+    </div>
+    <p class="skill-note" data-i18n="toolsNote">Daftar ini akan terus bertambah seiring saya mempelajari tools baru.</p>
+  </div>
+</section>
+
+<section id="interests">
+  <div class="wrap">
+    <div class="eyebrow mono" data-i18n="interestsEyebrow">MINAT & PERJALANAN BELAJAR</div>
+    <h2 data-i18n="interestsTitle">Bidang yang sedang saya jelajahi</h2>
+    <p class="lede" data-i18n="interestsLede">Bidang-bidang ini masih dalam proses saya pelajari dan kembangkan — bukan berarti saya sudah menguasainya, tapi saya cukup serius mengejarnya.</p>
+    <div class="interest-grid">
+      <div class="interest-card"><h3 data-i18n="int1Title">Teknologi</h3><p data-i18n="int1Desc">Mengikuti perkembangan alat dan tren teknologi terbaru.</p></div>
+      <div class="interest-card"><h3 data-i18n="int2Title">Coding</h3><p data-i18n="int2Desc">Belajar logika pemrograman lewat proyek-proyek kecil.</p></div>
+      <div class="interest-card"><h3 data-i18n="int3Title">Cryptocurrency</h3><p data-i18n="int3Desc">Memahami dasar-dasar aset digital dan cara kerjanya.</p></div>
+      <div class="interest-card"><h3 data-i18n="int4Title">Saham</h3><p data-i18n="int4Desc">Mengenal dasar investasi dan cara membaca kondisi pasar.</p></div>
+      <div class="interest-card"><h3 data-i18n="int5Title">Trading</h3><p data-i18n="int5Desc">Belajar membaca pergerakan harga dan manajemen risiko dasar.</p></div>
+      <div class="interest-card"><h3 data-i18n="int6Title">Analisis Data</h3><p data-i18n="int6Desc">Berlatih membaca data untuk mengambil kesimpulan sederhana.</p></div>
+      <div class="interest-card"><h3 data-i18n="int7Title">Freelance</h3><p data-i18n="int7Desc">Belajar mengelola proyek dan komunikasi dengan klien.</p></div>
+      <div class="interest-card"><h3 data-i18n="int8Title">Bisnis Digital</h3><p data-i18n="int8Desc">Mengenal cara kerja usaha dan layanan berbasis digital.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonial">
+  <div class="wrap">
+    <div class="eyebrow mono" data-i18n="testiEyebrow">TESTIMONI</div>
+    <h2 data-i18n="testiTitle">Apa kata klien</h2>
+    <p class="lede" data-i18n="testiLede">Bagian ini akan berisi testimoni asli dari klien yang pernah bekerja sama dengan saya. Belum ada ulasan palsu yang ditampilkan di sini.</p>
+
+    <!-- Form testimoni: tersimpan di browser pengunjung (localStorage), lalu ditampilkan sebagai card di bawah. -->
+    <form class="order-form testi-form" id="testiForm">
+      <div class="order-field">
+        <label for="testiNama" data-i18n="testiLabelNama">Nama</label>
+        <input type="text" id="testiNama" required>
+      </div>
+      <div class="order-field">
+        <label for="testiJasa" data-i18n="testiLabelJasa">Jasa yang Digunakan</label>
+        <select id="testiJasa">
+          <option value="website" data-i18n="estOptWebsite">Pembuatan Website</option>
+          <option value="coding" data-i18n="estOptCoding">Coding & Programming</option>
+          <option value="video" data-i18n="estOptVideo">Edit Video</option>
+          <option value="data" data-i18n="estOptData">Analisis Data</option>
+          <option value="design" data-i18n="estOptDesign">Desain Sederhana</option>
+          <option value="custom" data-i18n="estOptCustom">Custom Project</option>
+          <option value="other" data-i18n="estOptOther">Jasa Digital Lainnya</option>
+        </select>
+      </div>
+      <div class="order-field order-field-full">
+        <label for="testiIsi" data-i18n="testiLabelIsi">Isi Testimoni</label>
+        <textarea id="testiIsi" rows="3" required></textarea>
+      </div>
+      <div class="order-field order-field-full">
+        <label data-i18n="testiLabelRating">Rating</label>
+        <div class="star-rating" id="testiRating" role="group" aria-label="Rating">
+          <button type="button" class="star" data-value="1" aria-label="1 star">★</button>
+          <button type="button" class="star" data-value="2" aria-label="2 stars">★</button>
+          <button type="button" class="star" data-value="3" aria-label="3 stars">★</button>
+          <button type="button" class="star" data-value="4" aria-label="4 stars">★</button>
+          <button type="button" class="star" data-value="5" aria-label="5 stars">★</button>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary order-submit" data-i18n="testiSubmit">Kirim Testimoni</button>
+    </form>
+    <p class="testi-form-msg" id="testiFormMsg"></p>
+
+    <div class="testi-grid" id="testiGrid">
+      <!-- Diisi otomatis oleh script.js: testimoni asli jika ada, atau card kosong jika belum ada. -->
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="eyebrow mono" data-i18n="faqEyebrow">FAQ</div>
+    <h2 data-i18n="faqTitle">Pertanyaan yang sering ditanyakan</h2>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary data-i18n="faq1Q">Bagaimana cara menentukan harga jasa?</summary>
+        <p data-i18n="faq1A">Harga ditentukan berdasarkan jenis layanan, tingkat kesulitan, dan fitur tambahan yang dibutuhkan. Anda bisa cek daftar harga di bagian Layanan atau coba fitur Estimasi Proyek untuk gambaran awal.</p>
+      </details>
+      <details class="faq-item">
+        <summary data-i18n="faq2Q">Berapa lama waktu pengerjaan?</summary>
+        <p data-i18n="faq2A">Waktu pengerjaan bervariasi tergantung tingkat kesulitan, mulai dari beberapa jam untuk pekerjaan sederhana hingga beberapa hari untuk proyek yang lebih kompleks. Estimasi waktu tersedia di setiap layanan.</p>
+      </details>
+      <details class="faq-item">
+        <summary data-i18n="faq3Q">Apakah ada revisi?</summary>
+        <p data-i18n="faq3A">Ya, revisi tersedia sesuai kesepakatan di awal proyek agar hasil akhir sesuai dengan kebutuhan Anda. Jumlah dan batas revisi akan dibicarakan saat konsultasi.</p>
+      </details>
+      <details class="faq-item">
+        <summary data-i18n="faq4Q">Bagaimana cara memesan jasa?</summary>
+        <p data-i18n="faq4A">Anda bisa mengisi Form Pemesanan di bawah, atau menghubungi saya langsung lewat WhatsApp. Setelah itu kita akan diskusi kebutuhan sebelum mulai pengerjaan.</p>
+      </details>
+      <details class="faq-item">
+        <summary data-i18n="faq5Q">Bagaimana sistem pembayaran?</summary>
+        <p data-i18n="faq5A">Sistem pembayaran akan dibicarakan dan disepakati bersama saat konsultasi, menyesuaikan jenis dan skala proyek.</p>
+      </details>
+      <details class="faq-item">
+        <summary data-i18n="faq6Q">Apakah bisa request project custom?</summary>
+        <p data-i18n="faq6A">Bisa. Ceritakan kebutuhan Anda lewat form pemesanan atau WhatsApp, nanti saya akan jujur menyampaikan apakah project tersebut bisa saya kerjakan.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<div class="motivation">
+  <div class="wrap">
+    <span class="mono" data-i18n="motivationLabel">// CATATAN</span>
+    <p data-i18n="motivationText">Saya mungkin masih seorang pelajar dan masih dalam tahap belajar. Namun, saya percaya bahwa setiap orang hebat juga pernah menjadi pemula. Dengan terus belajar, mencoba, dan tidak mudah menyerah, saya ingin terus berkembang dan membangun masa depan yang lebih baik.</p>
+  </div>
+</div>
+
+<section id="order">
+  <div class="wrap">
+    <div class="eyebrow mono" data-i18n="orderEyebrow">PEMESANAN</div>
+    <h2 data-i18n="orderTitle">Isi form untuk memesan jasa</h2>
+    <p class="lede" data-i18n="orderLede">Isi data di bawah ini, lalu klik kirim — Anda akan diarahkan ke WhatsApp dengan detail pesanan yang sudah terisi otomatis.</p>
+    <form class="order-form" id="orderForm">
+      <div class="order-field">
+        <label for="orderNama" data-i18n="orderLabelNama">Nama</label>
+        <input type="text" id="orderNama" required>
+      </div>
+      <div class="order-field">
+        <label for="orderKontak" data-i18n="orderLabelKontak">Kontak (No. WhatsApp / Email)</label>
+        <input type="text" id="orderKontak" required>
+      </div>
+      <div class="order-field">
+        <label for="orderLayanan" data-i18n="orderLabelLayanan">Layanan</label>
+        <select id="orderLayanan">
+          <option value="website" data-i18n="estOptWebsite">Pembuatan Website</option>
+          <option value="coding" data-i18n="estOptCoding">Coding & Programming</option>
+          <option value="video" data-i18n="estOptVideo">Edit Video</option>
+          <option value="data" data-i18n="estOptData">Analisis Data</option>
+          <option value="design" data-i18n="estOptDesign">Desain Sederhana</option>
+          <option value="custom" data-i18n="estOptCustom">Custom Project</option>
+          <option value="other" data-i18n="estOptOther">Jasa Digital Lainnya</option>
+        </select>
+      </div>
+      <div class="order-field">
+        <label for="orderBudget" data-i18n="orderLabelBudget">Budget (perkiraan)</label>
+        <input type="text" id="orderBudget" data-i18n-ph="orderBudgetPh" placeholder="Rp...">
+      </div>
+      <div class="order-field">
+        <label for="orderDeadline" data-i18n="orderLabelDeadline">Deadline</label>
+        <input type="text" id="orderDeadline" data-i18n-ph="orderDeadlinePh" placeholder="mis. 3 hari lagi">
+      </div>
+      <div class="order-field order-field-full">
+        <label for="orderDetail" data-i18n="orderLabelDetail">Detail Project</label>
+        <textarea id="orderDetail" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary order-submit" data-i18n="orderSubmit">Kirim ke WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="eyebrow mono" data-i18n="contactEyebrow">KONTAK</div>
+    <h2 data-i18n="contactTitle">Mari mulai proyek Anda</h2>
+    <p class="lede" data-i18n="contactLede">Punya kebutuhan yang bisa saya bantu? Hubungi saya langsung lewat salah satu kanal di bawah.</p>
+    <div class="contact-links contact-links-solo">
+      <a class="contact-link contact-link-primary" id="waContactLink" href="https://wa.me/6285882885847" target="_blank" rel="noopener">
+        <svg class="ic" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.44 9.9-9.9 0-2.64-1.03-5.13-2.9-7-1.87-1.87-4.36-2.9-7.01-2.9zm0 18.13h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.23 8.23 0 0 1-1.26-4.37c0-4.55 3.7-8.25 8.26-8.25 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.84c0 4.55-3.7 8.25-8.25 8.25zm4.52-6.18c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.25-.64.81-.78.97-.14.17-.29.19-.53.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31s-.87.85-.87 2.08.89 2.41 1.02 2.58c.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.17-.48-.29z"/></svg>
+        <div><strong data-i18n="waLabel">WhatsApp</strong><span class="primary-tag mono" data-i18n="primaryContactLabel">Kontak Utama</span><div class="lvl mono" style="color:var(--text-soft);font-size:12.5px;">0858-8288-5847</div></div>
+      </a>
+    </div>
+    <div class="social-grid" style="margin-top:14px;">
+      <a class="social-card" href="mailto:naufalabdillah795@gmail.com">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 6l9 7 9-7"/></svg>
+        <div><strong data-i18n="emailLabel">Email</strong><div class="lvl mono" style="color:var(--text-soft);font-size:12.5px;">naufalabdillah795@gmail.com</div></div>
+      </a>
+      <a class="social-card" href="https://www.instagram.com/naufal.abdllah?stkn=aHR6OGVzYTNhNnV2&utm_source=qr" target="_blank" rel="noopener">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r=".6" fill="currentColor"/></svg>
+        <div><strong data-i18n="igLabel">Instagram</strong><div class="lvl mono" style="color:var(--text-soft);font-size:12.5px;">@naufal.abdllah</div></div>
+      </a>
+      <a class="social-card" href="https://github.com/naufalabdillah1" target="_blank" rel="noopener">
+        <svg class="ic" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.48v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.94.86.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.64 1.03 2.76 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .27.18.58.69.48A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+        <div><strong data-i18n="ghLabel">GitHub</strong><div class="lvl mono" style="color:var(--text-soft);font-size:12.5px;">naufalabdillah1</div></div>
+      </a>
+      <a class="social-card" href="https://www.tiktok.com/@naufal.abdllah" target="_blank" rel="noopener">
+        <svg class="ic" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M15 3v10.5a3.5 3.5 0 1 1-3-3.46V7a6 6 0 1 0 6 6V8.5c1 .8 2.2 1.3 3.5 1.3V7.3A4.8 4.8 0 0 1 17 3h-2z"/></svg>
+        <div><strong data-i18n="ttLabel">TikTok</strong><div class="lvl mono" style="color:var(--text-soft);font-size:12.5px;">@naufal.abdllah</div></div>
+      </a>
+    </div>
+    <div class="cta-row" style="margin-top:22px;">
+      <a href="https://wa.me/6285882885847" id="waCtaContact2" class="btn btn-primary" target="_blank" rel="noopener" data-i18n="ctaContact2">Hubungi Saya</a>
+      <a href="https://wa.me/6285882885847?text=Halo%2C%20saya%20tertarik%20dengan%20jasa%20yang%20kamu%20tawarkan.%20Saya%20ingin%20berdiskusi%20mengenai%20project%20saya." id="waCtaOrderNow" class="btn btn-amber" target="_blank" rel="noopener" data-i18n="ctaOrderNow">Pesan Jasa Sekarang</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <p data-i18n="footerText">© 2026 — Dibuat sendiri dengan HTML, CSS, dan JavaScript.</p>
+    <div class="foot-links">
+      <a href="#home" data-i18n="navHome">Beranda</a>
+      <a href="#contact" data-i18n="navContact">Kontak</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Tombol WhatsApp mengambang (item 18 & 23) — pesan otomatis diisi via script.js sesuai bahasa aktif -->
+<a href="https://wa.me/6285882885847?text=Halo%2C%20saya%20tertarik%20dengan%20jasa%20yang%20kamu%20tawarkan.%20Saya%20ingin%20berdiskusi%20mengenai%20project%20saya." id="waFloatBtn" class="wa-float" target="_blank" rel="noopener" aria-label="Konsultasi/Pesan lewat WhatsApp">
+  <svg class="ic" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.44 9.9-9.9 0-2.64-1.03-5.13-2.9-7-1.87-1.87-4.36-2.9-7.01-2.9zm0 18.13h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.23 8.23 0 0 1-1.26-4.37c0-4.55 3.7-8.25 8.26-8.25 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.84c0 4.55-3.7 8.25-8.25 8.25zm4.52-6.18c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.25-.64.81-.78.97-.14.17-.29.19-.53.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31s-.87.85-.87 2.08.89 2.41 1.02 2.58c.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.17-.48-.29z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
